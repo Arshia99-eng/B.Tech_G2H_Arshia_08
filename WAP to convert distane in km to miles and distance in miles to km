@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float km, miles, k, m;
+printf("enter the value of distance in km to convert in miles\n");
+scanf("%f",&km);
+m=km*0.621371;
+printf("the converted distance in miles is =%f\n",m);
+printf("enter the value of distance in miles to convert in km\n");
+scanf("%f",&miles);
+k=miles/0.621371;
+printf("the converted distance in km is =%f\n",k);
+return 0;
+}
