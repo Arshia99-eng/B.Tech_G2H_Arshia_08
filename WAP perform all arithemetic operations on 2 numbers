@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,sum,diff,prd,q;
+printf("enter the two numbers\n");
+scanf("%f%f",&a,&b);
+sum=a+b;
+diff=a-b;
+prd=a*b;
+q=a/b;
+printf("sum is %f\n",sum);
+printf("difference is %f\n",diff);\
+printf("product is %f\n",prd);
+printf("quotient is %f\n",q);
+return 0;
+}
