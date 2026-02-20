@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+#include<ctype.h>
+int main() {
+    double a,b,c,r1,r2,D,sq,t;
+    printf("enter the coefficient of the quadratic equation\n");
+    printf("enter the value of a\n");
+    scanf("%lf",&a);
+    printf("enter the value of b\n");
+    scanf("%lf",&b);
+    printf("enter the value of c\n");
+    scanf("%lf",&c);
+    D=(b*b)-(4*a*c);
+    printf("%lf",D);
+    if(D>0)
+    {
+        r1=((-b)+sqrt(D))/(2*a);
+        r2=((-b)-sqrt(D))/(2*a);
+        printf("the roots of the given equation are %lf and %lf",r1,r2);
+    }
+    else
+    {
+        r1=(-b)/(2*a);
+        sq=sqrt(-D);
+        t=(sq/(2*a));
+        printf("%lf\n",t);
+        printf("%lf\n",D);
+        printf("the roots of the equation are %lf + %lf i and %lf - % lf i", r1,(sq/(2*a)),r1,(sq/(2*a)));
+    }
+    
+    return 0;
+}
