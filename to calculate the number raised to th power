@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+  int n,p,r=1;
+  printf("enter the number");
+  scanf("%d",&n);
+  printf("enter the power");
+  scanf("%d",&p);
+  for(int i=0; i<p; i++)
+  {
+     r=r*n;
+  }
+  printf("the number raised to the power %d is %d ",n,r);
+     return 0;
+}
