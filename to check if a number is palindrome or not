@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main() {
+  int n,num=0, t=0 ;
+  printf("enter the number");
+  scanf("%d",&n);
+  int org=n;
+  while(n>0)
+  {
+      t=n;
+      n=n%10;
+      num=(num*10)+n;
+      n=t/10;
+  }
+  if(num==org)
+  printf("YESSSSSS !!!!! IT'S A PALINDROME.....:");
+  else
+printf("Nope....");
+  
+  
+     return 0;
+}
